@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main()
+{
+	int a,b,c,cube=0;
+	printf("Enter the no. to check it's Armstrong or not:");
+	scanf("%d",&a);
+	c=a;
+	while(a>0)
+	{
+		b=a%10;
+		cube=cube+(b*b*b);
+		a=a/10;
+	}
+	if(cube==c)
+	{
+		printf("It's an Arsmtrong No. that is %d",c);
+	}
+	else
+	{
+		printf("It's not an Armstrong No. that is %d",c);
+	}
+	return 0;
+}
